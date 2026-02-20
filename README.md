@@ -1,28 +1,28 @@
-# Домашнее задание к занятию 1. «Введение в виртуализацию» - `Фомичев Анатолий`
+# Домашнее задание к занятию 2. «Применение принципов IaaC в работе с виртуальными машинами» - `Фомичев Анатолий`
 
-## Ссылка на задачу курсовой работы - https://github.com/netology-code/virtd-homeworks/tree/shvirtd-1/05-virt-01-basics
+## Ссылка на ДЗ - https://github.com/netology-code/virtd-homeworks/blob/shvirtd-1/05-virt-02-iaac/README.md
 
 
-### Задача 1
+
+  
+![alt text](https://github.com/SLzDevOps/netology-virt-2/blob/main/Screenshot_692.png).
+![alt text](https://github.com/SLzDevOps/netology-virt-2/blob/main/Screenshot_693.png).
+![alt text](https://github.com/SLzDevOps/netology-virt-2/blob/main/Screenshot_694.png).
+![alt text](https://github.com/SLzDevOps/netology-virt-2/blob/main/Screenshot_696.png).
+![alt text](https://github.com/SLzDevOps/netology-virt-2/blob/main/Screenshot_697.png).
+![alt text](https://github.com/SLzDevOps/netology-virt-2/blob/main/Screenshot_698.png).
+![alt text](https://github.com/SLzDevOps/netology-virt-2/blob/main/Screenshot_699.png).
+![alt text](https://github.com/SLzDevOps/netology-virt-2/blob/main/Screenshot_700.png).
+![alt text](https://github.com/SLzDevOps/netology-virt-2/blob/main/Screenshot_701.png).
+![alt text](https://github.com/SLzDevOps/netology-virt-2/blob/main/Screenshot_702.png).
   
 
- 
 
 
-![alt text](https://github.com/SLzDevOps/netology-virt-1/blob/main/Screenshot_690.png).
-![alt text](https://github.com/SLzDevOps/netology-virt-1/blob/main/Screenshot_691.png).
 
 
-### Задача 2
-  
-  
-1. Высоконагруженная база данных MySQL, критичная к отказу
-Рекомендация: Физические сервера (Bare Metal).
-  
-Почему:
-Производительность: Виртуализация (особенно паравиртуализация и ОС-уровень) вносит задержки (latency) и накладные расходы на операции ввода-вывода (I/O). Для баз данных, где важна каждая микросекунда, прямой доступ к железу дает максимальную производительность.
-Предсказуемость: Отсутствие "соседей по серверу" (noisy neighbors) гарантирует, что пиковая нагрузка на базу не будет конкурировать за ресурсы CPU/RAM/диска с другими виртуальными машинами.
-Отказоустойчивость: Кластеризация баз данных (например, MySQL InnoDB Cluster или Galera) часто требует работы на физических серверах для корректной работы механизмов Split-Brain и гарантированной записи на диск. Использование физических серверов позволяет строить отказоустойчивые конфигурации без единой точки отказа (Single Point of Failure — SPOF), которую создает гипервизор. Если упадет гипервизор — упадут все ВМ на нем. Если упадет физический сервер — упадет только одна БД (и кластер это переживет).
-  
-2. Различные web-приложения
-Рекомендация: Виртуализация уровня ОС (Контейнеры, например, Docker, LXC).
+
+
+
+
+
